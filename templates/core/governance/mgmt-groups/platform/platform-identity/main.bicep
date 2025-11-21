@@ -1,6 +1,8 @@
 metadata name = 'ALZ Bicep - Platform-Identity Module'
 metadata description = 'ALZ Bicep Module used to deploy the Platform-Identity Management Group and associated resources such as policy definitions, policy set definitions (initiatives), custom RBAC roles, policy assignments, and policy exemptions.'
 
+import { alzCoreType as alzCoreType } from '../../int-root/main.bicep'
+
 targetScope = 'managementGroup'
 
 //================================
@@ -196,9 +198,3 @@ module platformIdentity 'br/public:avm/ptn/alz/empty:0.3.1' = {
     enableTelemetry: parEnableTelemetry
   }
 }
-
-// ================ //
-// Type Definitions
-// ================ //
-
-import { alzCoreType as alzCoreType } from '../../int-root/main.bicep'

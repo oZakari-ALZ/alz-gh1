@@ -2,8 +2,8 @@ using './main.bicep'
 
 // General Parameters
 param parLocations = [
-  '{{location-0}}'
-  '{{location-1}}'
+  'eastus2'
+  'westus2'
 ]
 param parEnableTelemetry = true
 
